@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import CaseSubmissionForm from "../components/CaseSubmissionForm";
@@ -56,7 +55,7 @@ const Index = () => {
                   },
                   {
                     step: "Get matched with lawyers",
-                    description: "Our system connects you with lawyers whose expertise matches your case requirements."
+                    description: "We will connect you to lawyers with the best expertise in your case domain."
                   },
                   {
                     step: "Lawyers review your case",
