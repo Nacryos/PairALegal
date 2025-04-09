@@ -14,11 +14,25 @@ import {
 const Index = () => {
   return (
     <div className="min-h-screen bg-white relative overflow-hidden">
+      {/* Abstract artwork background */}
       <div className="absolute top-0 left-0 right-0 bottom-0 
         bg-gradient-to-r from-blue-50 via-blue-100 to-blue-50 
         blur-[200px] rounded-full 
         opacity-70 -z-10 
         transform scale-125"></div>
+      
+      {/* Abstract shapes */}
+      <div className="absolute top-[5%] right-[15%] w-64 h-64 rounded-full bg-blue-100/50 blur-3xl -z-10"></div>
+      <div className="absolute top-[30%] left-[10%] w-96 h-96 rounded-full bg-blue-200/40 blur-3xl -z-10"></div>
+      <div className="absolute bottom-[20%] right-[5%] w-80 h-80 rounded-full bg-blue-100/50 blur-3xl -z-10"></div>
+      <div className="absolute -bottom-[10%] left-[25%] w-72 h-72 rounded-full bg-blue-300/30 blur-3xl -z-10"></div>
+      
+      {/* Diagonal lines */}
+      <div className="absolute top-0 left-0 w-full h-full -z-10 opacity-10">
+        <div className="absolute top-[10%] left-0 w-full h-0.5 bg-legal-primary/20 transform -rotate-[30deg]"></div>
+        <div className="absolute top-[30%] left-0 w-full h-0.5 bg-legal-primary/10 transform -rotate-[15deg]"></div>
+        <div className="absolute top-[70%] left-0 w-full h-0.5 bg-legal-primary/20 transform -rotate-[45deg]"></div>
+      </div>
       
       <section className="legal-gradient text-white">
         <div className="container mx-auto px-4 py-16 md:py-32 bg-white relative overflow-hidden">
