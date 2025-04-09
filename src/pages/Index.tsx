@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import CaseSubmissionForm from "../components/CaseSubmissionForm";
@@ -32,7 +33,7 @@ const Index = () => {
               <div className="pt-4">
                 <Button 
                   size="lg"
-                  className="bg-legal-accent text-legal-dark hover:bg-white hover:text-legal-primary transition-colors"
+                  className="bg-[#1EAEDB] hover:bg-[#D946EF] text-white hover:text-white transition-colors"
                 >
                   <a href="#submit-case" className="flex items-center">
                     Get Started
@@ -44,10 +45,10 @@ const Index = () => {
             
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg shadow-lg">
               <div className="flex items-center mb-4">
-                <Scale className="h-8 w-8 mr-3 text-legal-accent" />
+                <Scale className="h-8 w-8 mr-3 text-[#33C3F0]" />
                 <h2 className="text-xl font-semibold">How It Works</h2>
               </div>
-              <div className="space-y-4">
+              <div className="space-y-6">
                 {[
                   {
                     step: "Describe your legal needs",
@@ -67,7 +68,7 @@ const Index = () => {
                   }
                 ].map((item, i) => (
                   <div key={i} className="flex">
-                    <div className="shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-legal-accent text-legal-dark font-bold text-sm mr-4">
+                    <div className="shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-[#1EAEDB] text-white font-bold text-sm mr-4">
                       {i + 1}
                     </div>
                     <div>
@@ -148,7 +149,7 @@ const Index = () => {
             <Button 
               size="lg" 
               variant="outline"
-              className="border-white text-legal-primary bg-white hover:bg-legal-secondary hover:text-white"
+              className="border-white text-[#1EAEDB] bg-white hover:bg-[#D946EF] hover:text-white hover:border-[#D946EF]"
             >
               <MessageCircle className="mr-2 h-5 w-5" />
               Lawyer Login
