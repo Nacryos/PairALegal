@@ -21,7 +21,9 @@ const Index = () => {
         transform scale-125"></div>
       
       <section className="legal-gradient text-white">
-        <div className="container mx-auto px-4 py-16 md:py-32">
+        <div className="container mx-auto px-4 py-16 md:py-32 bg-white relative overflow-hidden">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-blue-100 rounded-full blur-3xl opacity-40 -z-10"></div>
+          
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="space-y-6 animate-fade-in">
               <h1 className="text-4xl md:text-5xl font-bold leading-tight">
