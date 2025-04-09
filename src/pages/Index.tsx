@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import CaseSubmissionForm from "../components/CaseSubmissionForm";
@@ -42,7 +43,7 @@ const Index = () => {
               </div>
             </div>
             
-            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg shadow-lg">
+            <div className="backdrop-blur-md bg-white/10 border border-white/20 p-6 rounded-lg shadow-lg">
               <div className="flex items-center mb-4">
                 <Scale className="h-8 w-8 mr-3 text-legal-accent" />
                 <h2 className="text-xl font-semibold">How It Works</h2>
