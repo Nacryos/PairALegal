@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import CaseSubmissionForm from "../components/CaseSubmissionForm";
@@ -26,10 +25,10 @@ const Index = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="space-y-6 animate-fade-in">
-              <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+              <h1 className="text-4xl md:text-5xl font-bold leading-tight text-[#0EA5E9]">
                 Connect with the Right Legal Representation
               </h1>
-              <p className="text-lg md:text-xl opacity-90">
+              <p className="text-lg md:text-xl opacity-90 text-[#0FA0CE]">
                 Describe your case. Get matched with suitable lawyers. Let AI help draft your initial legal documents.
               </p>
               <div className="pt-4">
@@ -48,7 +47,7 @@ const Index = () => {
             <div className="backdrop-blur-md bg-white/10 border border-white/20 p-6 rounded-lg shadow-lg">
               <div className="flex items-center mb-4">
                 <Scale className="h-8 w-8 mr-3 text-legal-accent" />
-                <h2 className="text-xl font-semibold">How It Works</h2>
+                <h2 className="text-xl font-semibold text-[#0EA5E9]">How It Works</h2>
               </div>
               <div className="space-y-6">
                 {[
@@ -74,8 +73,8 @@ const Index = () => {
                       {i + 1}
                     </div>
                     <div>
-                      <h3 className="font-medium">{item.step}</h3>
-                      <p className="text-white/80 text-sm">{item.description}</p>
+                      <h3 className="font-medium text-[#0FA0CE]">{item.step}</h3>
+                      <p className="text-[#0EA5E9] text-sm">{item.description}</p>
                     </div>
                   </div>
                 ))}
@@ -88,8 +87,8 @@ const Index = () => {
       <section className="legal-section bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-legal-primary mb-4">Our Platform Benefits</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold text-[#0FA0CE] mb-4">Our Platform Benefits</h2>
+            <p className="text-xl text-[#0EA5E9] max-w-3xl mx-auto">
               PairALegal helps clients find the right legal representation 
               while providing lawyers with efficient document drafting tools.
             </p>
@@ -98,17 +97,17 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                icon: <Search className="h-12 w-12 text-legal-primary" />,
+                icon: <Search className="h-12 w-12 text-[#0EA5E9]" />,
                 title: "Smart Matching",
                 description: "Connect with lawyers based on case type, location, and other key factors."
               },
               {
-                icon: <FileText className="h-12 w-12 text-legal-primary" />,
+                icon: <FileText className="h-12 w-12 text-[#0EA5E9]" />,
                 title: "AI Document Drafting",
                 description: "Lawyers can use our AI tool to efficiently draft preliminary legal documents."
               },
               {
-                icon: <Shield className="h-12 w-12 text-legal-primary" />,
+                icon: <Shield className="h-12 w-12 text-[#0EA5E9]" />,
                 title: "Privacy Protected",
                 description: "Your case details are shared only with matched legal professionals."
               }
@@ -118,8 +117,8 @@ const Index = () => {
                 className="bg-legal-light p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow flex flex-col items-center text-center"
               >
                 <div className="mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-semibold mb-2 text-legal-primary">{feature.title}</h3>
-                <p className="text-gray-700">{feature.description}</p>
+                <h3 className="text-xl font-semibold mb-2 text-[#0FA0CE]">{feature.title}</h3>
+                <p className="text-[#0EA5E9]">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -129,8 +128,8 @@ const Index = () => {
       <section id="submit-case" className="legal-section bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-legal-primary mb-4">Submit Your Case</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-[#0FA0CE] mb-4">Submit Your Case</h2>
+            <p className="text-xl text-[#0EA5E9] max-w-2xl mx-auto">
               Tell us about your legal needs, and we'll connect you with suitable lawyers.
             </p>
           </div>
@@ -143,8 +142,8 @@ const Index = () => {
       
       <section className="legal-section bg-legal-primary text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Are You a Legal Professional?</h2>
-          <p className="text-xl opacity-90 mb-8 max-w-2xl mx-auto">
+          <h2 className="text-3xl font-bold mb-6 text-[#0FA0CE]">Are You a Legal Professional?</h2>
+          <p className="text-xl opacity-90 mb-8 max-w-2xl mx-auto text-[#0EA5E9]">
             Join our platform to connect with potential clients and utilize our AI-powered document drafting tools.
           </p>
           <Link to="/lawyer-login">
