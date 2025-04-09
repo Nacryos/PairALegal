@@ -12,7 +12,9 @@ import {
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-white relative">
+      <div className="absolute top-0 left-0 right-0 bottom-0 bg-blue-50/30 blur-[100px] rounded-full opacity-40 -z-10"></div>
+      
       <section className="legal-gradient text-white">
         <div className="container mx-auto px-4 py-16 md:py-32">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
