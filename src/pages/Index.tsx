@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import CaseSubmissionForm from "../components/CaseSubmissionForm";
@@ -47,7 +48,7 @@ const Index = () => {
                 <Scale className="h-8 w-8 mr-3 text-legal-accent" />
                 <h2 className="text-xl font-semibold">How It Works</h2>
               </div>
-              <div className="space-y-4">
+              <div className="space-y-6">
                 {[
                   {
                     step: "Describe your legal needs",
