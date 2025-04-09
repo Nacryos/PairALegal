@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import CaseSubmissionForm from "../components/CaseSubmissionForm";
@@ -143,7 +142,7 @@ const Index = () => {
             <Button 
               size="lg" 
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-legal-primary"
+              className="border-white text-legal-primary bg-white hover:bg-legal-secondary hover:text-white"
             >
               <MessageCircle className="mr-2 h-5 w-5" />
               Lawyer Login

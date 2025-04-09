@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
 import { Button } from "@/components/ui/button";
@@ -40,7 +39,7 @@ const NavBar = () => {
                 <Button 
                   variant="outline" 
                   size="sm"
-                  className="border-white text-white hover:bg-white hover:text-legal-primary"
+                  className="border-white text-legal-primary bg-white hover:bg-legal-secondary hover:text-white"
                 >
                   Lawyer Login
                 </Button>
