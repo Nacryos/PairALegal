@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
@@ -38,38 +37,32 @@ const DocumentDrafter = ({ caseDetails }: DocumentDrafterProps) => {
   const [isGenerating, setIsGenerating] = useState(false);
   const { toast } = useToast();
 
-  // Initialize or load document when type changes
   useEffect(() => {
     if (!documentType || !caseDetails) return;
     
-    // Try to load an existing document first
     const savedDocuments = documentService.getDocumentsForCase(caseDetails.id);
     const existingDoc = savedDocuments.find(doc => doc.documentType === documentType);
     
     if (existingDoc) {
       setDocument(existingDoc);
     } else {
-      // Create a new document from template
       const newDocument = documentService.getTemplate(documentType, caseDetails.id);
       setDocument(newDocument);
       documentService.saveDocument(newDocument);
     }
   }, [documentType, caseDetails]);
 
-  // Handle document type change
   const handleDocumentTypeChange = (value: string) => {
     setDocumentType(value as DocumentType);
     setEditingSectionIndex(null);
   };
 
-  // Start editing a section
   const startEditing = (index: number) => {
     if (!document) return;
     setEditingSectionIndex(index);
     setEditContent(document.sections[index].content);
   };
 
-  // Save edited section
   const saveEdits = () => {
     if (!document || editingSectionIndex === null) return;
     
@@ -89,13 +82,11 @@ const DocumentDrafter = ({ caseDetails }: DocumentDrafterProps) => {
     });
   };
 
-  // Cancel editing
   const cancelEditing = () => {
     setEditingSectionIndex(null);
     setEditContent("");
   };
 
-  // Generate AI content for a section
   const generateContent = async (index: number) => {
     if (!document) return;
     
@@ -131,7 +122,6 @@ const DocumentDrafter = ({ caseDetails }: DocumentDrafterProps) => {
     }
   };
 
-  // Copy document to clipboard
   const copyToClipboard = () => {
     if (!document) return;
     
@@ -147,7 +137,6 @@ const DocumentDrafter = ({ caseDetails }: DocumentDrafterProps) => {
     });
   };
 
-  // Download document as text file
   const downloadDocument = () => {
     if (!document) return;
     
@@ -157,16 +146,15 @@ const DocumentDrafter = ({ caseDetails }: DocumentDrafterProps) => {
     
     const blob = new Blob([text], { type: 'text/plain' });
     const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
+    const a = window.document.createElement('a');
     a.href = url;
     a.download = `${document.documentType.replace(/\s+/g, '_')}_${new Date().toISOString().split('T')[0]}.txt`;
-    document.body.appendChild(a);
+    window.document.body.appendChild(a);
     a.click();
-    document.body.removeChild(a);
+    window.document.body.removeChild(a);
     URL.revokeObjectURL(url);
   };
 
-  // Render section
   const renderSection = (section: DocumentSection, index: number) => {
     const isEditing = editingSectionIndex === index;
     
