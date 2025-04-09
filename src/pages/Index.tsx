@@ -12,8 +12,12 @@ import {
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-white relative">
-      <div className="absolute top-0 left-0 right-0 bottom-0 bg-blue-100/50 blur-[150px] rounded-full opacity-60 -z-10"></div>
+    <div className="min-h-screen bg-white relative overflow-hidden">
+      <div className="absolute top-0 left-0 right-0 bottom-0 
+        bg-gradient-to-r from-blue-50 via-blue-100 to-blue-50 
+        blur-[200px] rounded-full 
+        opacity-70 -z-10 
+        transform scale-125"></div>
       
       <section className="legal-gradient text-white">
         <div className="container mx-auto px-4 py-16 md:py-32">
