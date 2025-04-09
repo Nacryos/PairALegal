@@ -1,7 +1,8 @@
+
 import { Link } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
 import { Button } from "@/components/ui/button";
-import { SlidersHorizontal, User, LogOut } from "lucide-react";
+import { Scale, User, LogOut } from "lucide-react";
 
 const NavBar = () => {
   const { user, logout, isAuthenticated } = useAuth();
@@ -12,8 +13,8 @@ const NavBar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <SlidersHorizontal className="h-8 w-8 mr-2" />
-              <span className="text-xl font-bold">PairALegal</span>
+              <Scale className="h-8 w-8 mr-2" />
+              <span className="text-3xl font-bold">PairALegal</span>
             </Link>
           </div>
           
