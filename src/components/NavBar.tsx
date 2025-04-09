@@ -14,7 +14,7 @@ const NavBar = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <SlidersHorizontal className="h-8 w-8 mr-2" />
-              <span className="text-xl font-bold">Legal Match & Draft AI</span>
+              <span className="text-xl font-bold">PairALegal</span>
             </Link>
           </div>
           

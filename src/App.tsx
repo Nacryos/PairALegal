@@ -33,7 +33,7 @@ const App = () => (
               </Routes>
             </main>
             <footer className="py-4 bg-white border-t text-center text-xs text-gray-500">
-              © 2025 Legal Match & Draft AI MVP. Not for production use.
+              © 2025 PairALegal MVP. Not for production use.
             </footer>
           </div>
         </BrowserRouter>

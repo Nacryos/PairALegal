@@ -82,7 +82,7 @@ const Index = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-legal-primary mb-4">Our Platform Benefits</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Legal Match & Draft AI helps clients find the right legal representation 
+              PairALegal helps clients find the right legal representation 
               while providing lawyers with efficient document drafting tools.
             </p>
           </div>
@@ -158,7 +158,7 @@ const Index = () => {
             <div className="mb-4 md:mb-0">
               <div className="flex items-center">
                 <Scale className="h-6 w-6 mr-2" />
-                <span className="text-xl font-bold">Legal Match & Draft AI</span>
+                <span className="text-xl font-bold">PairALegal</span>
               </div>
               <p className="text-sm opacity-75 mt-2">
                 Connecting clients with legal professionals
@@ -167,7 +167,7 @@ const Index = () => {
             
             <div className="text-center md:text-right">
               <p className="text-sm opacity-75">
-                © 2025 Legal Match & Draft AI. All rights reserved.
+                © 2025 PairALegal. All rights reserved.
               </p>
               <div className="flex justify-center md:justify-end space-x-4 mt-2">
                 <a href="#" className="text-sm hover:underline">Privacy Policy</a>
