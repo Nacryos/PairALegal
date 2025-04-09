@@ -193,7 +193,7 @@ export const getDocumentTemplate = (documentType: DocumentType, caseId: string):
       sections: [
         {
           title: 'Client Objective',
-          content: '[Client's stated goals]'
+          content: '[Client\'s stated goals]'
         },
         {
           title: 'Key Facts',
